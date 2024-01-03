@@ -1,4 +1,4 @@
-import { Formik, Form, Field, ErrorMessage } from 'formik';
+import { Formik, Form, Field, ErrorMessage, FormikHelpers } from 'formik';
 import { object, string } from 'yup';
 
 interface Values {
@@ -21,9 +21,9 @@ const initialValues = { email: '', password: '' }
 
 const TodoForm = () => {
 
-  const handleSubmit = (values: Values) => {
+  const handleSubmit = (values: Values, { resetForm }: FormikHelpers<Values>) => {
     console.log(values)
-    // resetForm()
+    resetForm()
   }
   return (
     <div>

@@ -5,14 +5,6 @@ import './App.css'
 import TodoForm from "./components/Form/Form"
 
 function App() {
-  // const [count, setCount] = useState(0)
-  const res = () => {
-  const a = 4;
-  const b = 5;
-  return a + b
-
-  }
-  console.log(res())
   return (
     <>
       <TodoForm/>
